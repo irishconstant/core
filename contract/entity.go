@@ -4,6 +4,7 @@ import (
 	"time"
 
 	"github.com/irishconstant/core/auth"
+	"github.com/irishconstant/core/doc"
 	"github.com/irishconstant/core/ref"
 )
 
@@ -27,7 +28,7 @@ type LegalEntity struct {
 
 	PossibleUsers []auth.User // Доступные пользователи для привязки
 	Contacts      []Contact   // Контакты
-	Docs          []Doc       // Документы
+	Docs          []doc.Doc   // Документы
 }
 
 // EntityRole Роль юридического лица

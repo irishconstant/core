@@ -4,6 +4,7 @@ import (
 	"time"
 
 	"github.com/irishconstant/core/auth"
+	"github.com/irishconstant/core/doc"
 	"github.com/irishconstant/core/ref"
 )
 
@@ -22,18 +23,7 @@ type Person struct {
 
 	PossibleUsers []auth.User // Доступные пользователи для привязки
 	Contacts      []Contact   // Контакты
-	Docs          []Doc       // Документы
-}
-
-// Doc Документ
-type Doc struct {
-	Key          int
-	SerialNumber string // Серия
-	Number       string // Номер
-	FromName     string // Кем выдан
-	FromCode     string // Код подразделения
-	DateBegin    string // Дата выдачи
-	DateEnd      string // Дата окончания срока действия
+	Docs          []doc.Doc   // Документы
 }
 
 // Contact Контакт

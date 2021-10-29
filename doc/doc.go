@@ -1,4 +1,4 @@
-package contract
+package doc
 
 import "github.com/irishconstant/core/ref"
 
@@ -20,4 +20,9 @@ type DocType struct {
 	IsFromCode     bool
 	IsDateBegin    bool
 	IsDateEnd      bool
+}
+
+type Doc struct {
+	Key  int
+	Name string
 }
